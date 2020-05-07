@@ -1,0 +1,175 @@
+/*===Typography===*/
+
+
+body {
+    font-family: ‘Helvetica’, ‘Arial’, sans-serif;
+    font-size: 14pt;
+    line-height: 18pt;
+    color: #000000;
+}
+
+#nav {
+    font-family: ‘Helvetica’, ‘Arial’, sans-serif;
+    font-style: bold;
+    font-size: 18pt;
+    line-height: 18pt;
+    color: #cdcdcd;
+}
+a {
+    text-decoration: none;
+    color:#cdcdcd;
+    margin-left: 50px;
+}
+
+h1 {
+    font-family: "Teko", sans-serif;
+    font-weight: 600;
+    font-size: 72pt;
+    line-height: 18pt;
+    color: #000000;
+}
+
+h2 {
+    font-family: ‘Helvetica’, ‘Arial’, sans-serif;
+    font-size: 24pt;
+    font-style: bold;
+    line-height: 18pt;
+    color: #000000;
+}
+
+footer {
+    font-family: ‘Helvetica’, ‘Arial’, sans-serif;
+    font-size: 10pt;
+    font-style: oblique;
+    line-height: 18pt;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* === Backgrounds === */
+
+header {
+    background-color: #000000;
+
+}
+
+main {
+    background-color: #cdcdcd
+}
+
+body {
+    background-color: #ffffff;
+}
+
+footer {
+    background-color: #000000
+}
+
+#splash {
+    background-image: url(heading.jpg);
+    background-size: cover;
+}
+
+
+/* === Box Model === */
+
+#splash {
+    height: 400px
+}
+
+nav {
+    padding: 30px;
+    margin-right: 100px;
+}
+
+footer {
+    padding: 30px;
+    bottom: 0px;
+}
+
+#foodarticles {
+    padding: 30px;
+}
+
+article {
+    margin-bottom: 100px;
+}
+
+/* === Layout === */
+
+.floatleft {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#container {
+    width: 1000px;
+    margin: auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    padding-top: 140px;
+    grid-template-rows: 400px 150px auto;
+}
+
+#splash {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside {
+    margin-left: 35px;
+    margin-top: 55px;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+#Advertistment {
+    position: fixed;
+    bottom: 0px;
+    right: 50px;
+    width: 30%;
+    background-color: #ff0000;
+    font-family: "Helvetica", sans-serif;
+    font-size: 14pt;
+    line-height: 18pt;
+    color: #000000;
+    font-style: normal;
+    padding-left: 30px;
+    text-align: left;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+
+#Archives {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#Friends {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+#foodarticles {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
